@@ -1,0 +1,957 @@
+Frame 16: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: Intel_3d:05:65 (00:02:b3:3d:05:65), Dst: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4)
+Internet Protocol Version 4, Src: 192.168.0.18, Dst: 192.168.0.3
+Transmission Control Protocol, Src Port: 56360, Dst Port: 1234, Seq: 0, Len: 0
+    Source Port: 56360
+    Destination Port: 1234
+    [Stream index: 3]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    Acknowledgment number: 0
+    1010 .... = Header Length: 40 bytes (10)
+    Flags: 0x002 (SYN)
+    Window size value: 29200
+    [Calculated window size: 29200]
+    Checksum: 0x254e [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (20 bytes), Maximum segment size, SACK permitted, Timestamps, No-Operation (NOP), Window scale
+
+Frame 17: 74 bytes on wire (592 bits), 74 bytes captured (592 bits) on interface 0
+Ethernet II, Src: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4), Dst: Intel_3d:05:65 (00:02:b3:3d:05:65)
+Internet Protocol Version 4, Src: 192.168.0.3, Dst: 192.168.0.18
+Transmission Control Protocol, Src Port: 1234, Dst Port: 56360, Seq: 0, Ack: 1, Len: 0
+    Source Port: 1234
+    Destination Port: 56360
+    [Stream index: 3]
+    [TCP Segment Len: 0]
+    Sequence number: 0    (relative sequence number)
+    Acknowledgment number: 1    (relative ack number)
+    1010 .... = Header Length: 40 bytes (10)
+    Flags: 0x012 (SYN, ACK)
+    Window size value: 28960
+    [Calculated window size: 28960]
+    Checksum: 0xf23d [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (20 bytes), Maximum segment size, SACK permitted, Timestamps, No-Operation (NOP), Window scale
+    [SEQ/ACK analysis]
+
+Frame 18: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: Intel_3d:05:65 (00:02:b3:3d:05:65), Dst: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4)
+Internet Protocol Version 4, Src: 192.168.0.18, Dst: 192.168.0.3
+Transmission Control Protocol, Src Port: 56360, Dst Port: 1234, Seq: 1, Ack: 1, Len: 0
+    Source Port: 56360
+    Destination Port: 1234
+    [Stream index: 3]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x010 (ACK)
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x9145 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+
+Frame 19: 1066 bytes on wire (8528 bits), 1066 bytes captured (8528 bits) on interface 0
+Ethernet II, Src: Intel_3d:05:65 (00:02:b3:3d:05:65), Dst: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4)
+Internet Protocol Version 4, Src: 192.168.0.18, Dst: 192.168.0.3
+Transmission Control Protocol, Src Port: 56360, Dst Port: 1234, Seq: 1, Ack: 1, Len: 1000
+    Source Port: 56360
+    Destination Port: 1234
+    [Stream index: 3]
+    [TCP Segment Len: 1000]
+    Sequence number: 1    (relative sequence number)
+    [Next sequence number: 1001    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0xe796 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+    TCP payload (1000 bytes)
+Data (1000 bytes)
+
+0000  20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f    !"#$%&'()*+,-./
+0010  30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f   0123456789:;<=>?
+0020  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0030  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+0040  60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f   `abcdefghijklmno
+0050  70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20   pqrstuvwxyz{|}~ 
+0060  21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30   !"#$%&'()*+,-./0
+0070  31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40   123456789:;<=>?@
+0080  41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50   ABCDEFGHIJKLMNOP
+0090  51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60   QRSTUVWXYZ[\]^_`
+00a0  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+00b0  71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21   qrstuvwxyz{|}~ !
+00c0  22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31   "#$%&'()*+,-./01
+00d0  32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41   23456789:;<=>?@A
+00e0  42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51   BCDEFGHIJKLMNOPQ
+00f0  52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61   RSTUVWXYZ[\]^_`a
+0100  62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71   bcdefghijklmnopq
+0110  72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22   rstuvwxyz{|}~ !"
+0120  23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32   #$%&'()*+,-./012
+0130  33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42   3456789:;<=>?@AB
+0140  43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52   CDEFGHIJKLMNOPQR
+0150  53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62   STUVWXYZ[\]^_`ab
+0160  63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72   cdefghijklmnopqr
+0170  73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23   stuvwxyz{|}~ !"#
+0180  24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33   $%&'()*+,-./0123
+0190  34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43   456789:;<=>?@ABC
+01a0  44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53   DEFGHIJKLMNOPQRS
+01b0  54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63   TUVWXYZ[\]^_`abc
+01c0  64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73   defghijklmnopqrs
+01d0  74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24   tuvwxyz{|}~ !"#$
+01e0  25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34   %&'()*+,-./01234
+01f0  35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44   56789:;<=>?@ABCD
+0200  45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54   EFGHIJKLMNOPQRST
+0210  55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64   UVWXYZ[\]^_`abcd
+0220  65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74   efghijklmnopqrst
+0230  75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25   uvwxyz{|}~ !"#$%
+0240  26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35   &'()*+,-./012345
+0250  36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45   6789:;<=>?@ABCDE
+0260  46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55   FGHIJKLMNOPQRSTU
+0270  56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65   VWXYZ[\]^_`abcde
+0280  66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75   fghijklmnopqrstu
+0290  76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26   vwxyz{|}~ !"#$%&
+02a0  27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36   '()*+,-./0123456
+02b0  37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46   789:;<=>?@ABCDEF
+02c0  47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56   GHIJKLMNOPQRSTUV
+02d0  57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66   WXYZ[\]^_`abcdef
+02e0  67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76   ghijklmnopqrstuv
+02f0  77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27   wxyz{|}~ !"#$%&'
+0300  28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+0310  38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47   89:;<=>?@ABCDEFG
+0320  48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57   HIJKLMNOPQRSTUVW
+0330  58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67   XYZ[\]^_`abcdefg
+0340  68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77   hijklmnopqrstuvw
+0350  78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28   xyz{|}~ !"#$%&'(
+0360  29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38   )*+,-./012345678
+0370  39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48   9:;<=>?@ABCDEFGH
+0380  49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58   IJKLMNOPQRSTUVWX
+0390  59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68   YZ[\]^_`abcdefgh
+03a0  69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78   ijklmnopqrstuvwx
+03b0  79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29   yz{|}~ !"#$%&'()
+03c0  2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39   *+,-./0123456789
+03d0  3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49   :;<=>?@ABCDEFGHI
+03e0  4a 4b 4c 4d 4e 4f 50 51                           JKLMNOPQ
+
+Frame 20: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4), Dst: Intel_3d:05:65 (00:02:b3:3d:05:65)
+Internet Protocol Version 4, Src: 192.168.0.3, Dst: 192.168.0.18
+Transmission Control Protocol, Src Port: 1234, Dst Port: 56360, Seq: 1, Ack: 1001, Len: 0
+    Source Port: 1234
+    Destination Port: 56360
+    [Stream index: 3]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    Acknowledgment number: 1001    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x010 (ACK)
+    Window size value: 251
+    [Calculated window size: 32128]
+    [Window size scaling factor: 128]
+    Checksum: 0x8d18 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+
+Frame 21: 1514 bytes on wire (12112 bits), 1514 bytes captured (12112 bits) on interface 0
+Ethernet II, Src: Intel_3d:05:65 (00:02:b3:3d:05:65), Dst: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4)
+Internet Protocol Version 4, Src: 192.168.0.18, Dst: 192.168.0.3
+Transmission Control Protocol, Src Port: 56360, Dst Port: 1234, Seq: 1001, Ack: 1, Len: 1448
+    Source Port: 56360
+    Destination Port: 1234
+    [Stream index: 3]
+    [TCP Segment Len: 1448]
+    Sequence number: 1001    (relative sequence number)
+    [Next sequence number: 2449    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x010 (ACK)
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x5a4d [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+    TCP payload (1448 bytes)
+Data (1448 bytes)
+
+0000  20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f    !"#$%&'()*+,-./
+0010  30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f   0123456789:;<=>?
+0020  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0030  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+0040  60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f   `abcdefghijklmno
+0050  70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20   pqrstuvwxyz{|}~ 
+0060  21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30   !"#$%&'()*+,-./0
+0070  31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40   123456789:;<=>?@
+0080  41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50   ABCDEFGHIJKLMNOP
+0090  51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60   QRSTUVWXYZ[\]^_`
+00a0  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+00b0  71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21   qrstuvwxyz{|}~ !
+00c0  22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31   "#$%&'()*+,-./01
+00d0  32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41   23456789:;<=>?@A
+00e0  42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51   BCDEFGHIJKLMNOPQ
+00f0  52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61   RSTUVWXYZ[\]^_`a
+0100  62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71   bcdefghijklmnopq
+0110  72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22   rstuvwxyz{|}~ !"
+0120  23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32   #$%&'()*+,-./012
+0130  33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42   3456789:;<=>?@AB
+0140  43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52   CDEFGHIJKLMNOPQR
+0150  53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62   STUVWXYZ[\]^_`ab
+0160  63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72   cdefghijklmnopqr
+0170  73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23   stuvwxyz{|}~ !"#
+0180  24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33   $%&'()*+,-./0123
+0190  34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43   456789:;<=>?@ABC
+01a0  44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53   DEFGHIJKLMNOPQRS
+01b0  54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63   TUVWXYZ[\]^_`abc
+01c0  64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73   defghijklmnopqrs
+01d0  74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24   tuvwxyz{|}~ !"#$
+01e0  25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34   %&'()*+,-./01234
+01f0  35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44   56789:;<=>?@ABCD
+0200  45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54   EFGHIJKLMNOPQRST
+0210  55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64   UVWXYZ[\]^_`abcd
+0220  65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74   efghijklmnopqrst
+0230  75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25   uvwxyz{|}~ !"#$%
+0240  26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35   &'()*+,-./012345
+0250  36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45   6789:;<=>?@ABCDE
+0260  46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55   FGHIJKLMNOPQRSTU
+0270  56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65   VWXYZ[\]^_`abcde
+0280  66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75   fghijklmnopqrstu
+0290  76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26   vwxyz{|}~ !"#$%&
+02a0  27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36   '()*+,-./0123456
+02b0  37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46   789:;<=>?@ABCDEF
+02c0  47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56   GHIJKLMNOPQRSTUV
+02d0  57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66   WXYZ[\]^_`abcdef
+02e0  67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76   ghijklmnopqrstuv
+02f0  77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27   wxyz{|}~ !"#$%&'
+0300  28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+0310  38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47   89:;<=>?@ABCDEFG
+0320  48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57   HIJKLMNOPQRSTUVW
+0330  58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67   XYZ[\]^_`abcdefg
+0340  68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77   hijklmnopqrstuvw
+0350  78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28   xyz{|}~ !"#$%&'(
+0360  29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38   )*+,-./012345678
+0370  39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48   9:;<=>?@ABCDEFGH
+0380  49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58   IJKLMNOPQRSTUVWX
+0390  59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68   YZ[\]^_`abcdefgh
+03a0  69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78   ijklmnopqrstuvwx
+03b0  79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29   yz{|}~ !"#$%&'()
+03c0  2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39   *+,-./0123456789
+03d0  3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49   :;<=>?@ABCDEFGHI
+03e0  4a 4b 4c 4d 4e 4f 50 51 20 21 22 23 24 25 26 27   JKLMNOPQ !"#$%&'
+03f0  28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+0400  38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47   89:;<=>?@ABCDEFG
+0410  48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57   HIJKLMNOPQRSTUVW
+0420  58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67   XYZ[\]^_`abcdefg
+0430  68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77   hijklmnopqrstuvw
+0440  78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28   xyz{|}~ !"#$%&'(
+0450  29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38   )*+,-./012345678
+0460  39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48   9:;<=>?@ABCDEFGH
+0470  49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58   IJKLMNOPQRSTUVWX
+0480  59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68   YZ[\]^_`abcdefgh
+0490  69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78   ijklmnopqrstuvwx
+04a0  79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29   yz{|}~ !"#$%&'()
+04b0  2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39   *+,-./0123456789
+04c0  3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49   :;<=>?@ABCDEFGHI
+04d0  4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59   JKLMNOPQRSTUVWXY
+04e0  5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69   Z[\]^_`abcdefghi
+04f0  6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 79   jklmnopqrstuvwxy
+0500  7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29 2a   z{|}~ !"#$%&'()*
+0510  2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39 3a   +,-./0123456789:
+0520  3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49 4a   ;<=>?@ABCDEFGHIJ
+0530  4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a   KLMNOPQRSTUVWXYZ
+0540  5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a   [\]^_`abcdefghij
+0550  6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 79 7a   klmnopqrstuvwxyz
+0560  7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29 2a 2b   {|}~ !"#$%&'()*+
+0570  2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39 3a 3b   ,-./0123456789:;
+0580  3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49 4a 4b   <=>?@ABCDEFGHIJK
+0590  4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b   LMNOPQRSTUVWXYZ[
+05a0  5c 5d 5e 5f 60 61 62 63                           \]^_`abc
+
+Frame 22: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4), Dst: Intel_3d:05:65 (00:02:b3:3d:05:65)
+Internet Protocol Version 4, Src: 192.168.0.3, Dst: 192.168.0.18
+Transmission Control Protocol, Src Port: 1234, Dst Port: 56360, Seq: 1, Ack: 2449, Len: 0
+    Source Port: 1234
+    Destination Port: 56360
+    [Stream index: 3]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    Acknowledgment number: 2449    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x010 (ACK)
+    Window size value: 274
+    [Calculated window size: 35072]
+    [Window size scaling factor: 128]
+    Checksum: 0x8759 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+
+Frame 23: 2962 bytes on wire (23696 bits), 2962 bytes captured (23696 bits) on interface 0
+Ethernet II, Src: Intel_3d:05:65 (00:02:b3:3d:05:65), Dst: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4)
+Internet Protocol Version 4, Src: 192.168.0.18, Dst: 192.168.0.3
+Transmission Control Protocol, Src Port: 56360, Dst Port: 1234, Seq: 2449, Ack: 1, Len: 2896
+    Source Port: 56360
+    Destination Port: 1234
+    [Stream index: 3]
+    [TCP Segment Len: 2896]
+    Sequence number: 2449    (relative sequence number)
+    [Next sequence number: 5345    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x010 (ACK)
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x8cdc [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+    TCP payload (2896 bytes)
+Data (2896 bytes)
+
+0000  64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73   defghijklmnopqrs
+0010  74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24   tuvwxyz{|}~ !"#$
+0020  25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34   %&'()*+,-./01234
+0030  35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44   56789:;<=>?@ABCD
+0040  45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54   EFGHIJKLMNOPQRST
+0050  55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64   UVWXYZ[\]^_`abcd
+0060  65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74   efghijklmnopqrst
+0070  75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25   uvwxyz{|}~ !"#$%
+0080  26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35   &'()*+,-./012345
+0090  36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45   6789:;<=>?@ABCDE
+00a0  46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55   FGHIJKLMNOPQRSTU
+00b0  56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65   VWXYZ[\]^_`abcde
+00c0  66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75   fghijklmnopqrstu
+00d0  76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26   vwxyz{|}~ !"#$%&
+00e0  27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36   '()*+,-./0123456
+00f0  37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46   789:;<=>?@ABCDEF
+0100  47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56   GHIJKLMNOPQRSTUV
+0110  57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66   WXYZ[\]^_`abcdef
+0120  67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76   ghijklmnopqrstuv
+0130  77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27   wxyz{|}~ !"#$%&'
+0140  28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+0150  38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47   89:;<=>?@ABCDEFG
+0160  48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57   HIJKLMNOPQRSTUVW
+0170  58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67   XYZ[\]^_`abcdefg
+0180  68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77   hijklmnopqrstuvw
+0190  78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28   xyz{|}~ !"#$%&'(
+01a0  29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38   )*+,-./012345678
+01b0  39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48   9:;<=>?@ABCDEFGH
+01c0  49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58   IJKLMNOPQRSTUVWX
+01d0  59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68   YZ[\]^_`abcdefgh
+01e0  69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78   ijklmnopqrstuvwx
+01f0  79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29   yz{|}~ !"#$%&'()
+0200  2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39   *+,-./0123456789
+0210  3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49   :;<=>?@ABCDEFGHI
+0220  4a 4b 4c 4d 4e 4f 50 51 20 21 22 23 24 25 26 27   JKLMNOPQ !"#$%&'
+0230  28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+0240  38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47   89:;<=>?@ABCDEFG
+0250  48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57   HIJKLMNOPQRSTUVW
+0260  58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67   XYZ[\]^_`abcdefg
+0270  68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77   hijklmnopqrstuvw
+0280  78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28   xyz{|}~ !"#$%&'(
+0290  29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38   )*+,-./012345678
+02a0  39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48   9:;<=>?@ABCDEFGH
+02b0  49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58   IJKLMNOPQRSTUVWX
+02c0  59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68   YZ[\]^_`abcdefgh
+02d0  69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78   ijklmnopqrstuvwx
+02e0  79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29   yz{|}~ !"#$%&'()
+02f0  2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39   *+,-./0123456789
+0300  3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49   :;<=>?@ABCDEFGHI
+0310  4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59   JKLMNOPQRSTUVWXY
+0320  5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69   Z[\]^_`abcdefghi
+0330  6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 79   jklmnopqrstuvwxy
+0340  7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29 2a   z{|}~ !"#$%&'()*
+0350  2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39 3a   +,-./0123456789:
+0360  3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49 4a   ;<=>?@ABCDEFGHIJ
+0370  4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a   KLMNOPQRSTUVWXYZ
+0380  5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a   [\]^_`abcdefghij
+0390  6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 79 7a   klmnopqrstuvwxyz
+03a0  7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29 2a 2b   {|}~ !"#$%&'()*+
+03b0  2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39 3a 3b   ,-./0123456789:;
+03c0  3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49 4a 4b   <=>?@ABCDEFGHIJK
+03d0  4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b   LMNOPQRSTUVWXYZ[
+03e0  5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 6b   \]^_`abcdefghijk
+03f0  6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 79 7a 7b   lmnopqrstuvwxyz{
+0400  7c 7d 7e 20 21 22 23 24 25 26 27 28 29 2a 2b 2c   |}~ !"#$%&'()*+,
+0410  2d 2e 2f 30 31 32 33 34 35 36 37 38 39 3a 3b 3c   -./0123456789:;<
+0420  3d 3e 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c   =>?@ABCDEFGHIJKL
+0430  4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c   MNOPQRSTUVWXYZ[\
+0440  5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 6b 6c   ]^_`abcdefghijkl
+0450  6d 6e 6f 70 71 72 73 74 75 76 77 78 79 7a 7b 7c   mnopqrstuvwxyz{|
+0460  7d 7e 20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d   }~ !"#$%&'()*+,-
+0470  2e 2f 30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d   ./0123456789:;<=
+0480  3e 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d   >?@ABCDEFGHIJKLM
+0490  4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d   NOPQRSTUVWXYZ[\]
+04a0  5e 5f 60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d   ^_`abcdefghijklm
+04b0  6e 6f 70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d   nopqrstuvwxyz{|}
+04c0  7e 20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e   ~ !"#$%&'()*+,-.
+04d0  2f 30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e   /0123456789:;<=>
+04e0  3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e   ?@ABCDEFGHIJKLMN
+04f0  4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e   OPQRSTUVWXYZ[\]^
+0500  5f 60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e   _`abcdefghijklmn
+0510  6f 70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e   opqrstuvwxyz{|}~
+0520  20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f    !"#$%&'()*+,-./
+0530  30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f   0123456789:;<=>?
+0540  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0550  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+0560  60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f   `abcdefghijklmno
+0570  70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20   pqrstuvwxyz{|}~ 
+0580  21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30   !"#$%&'()*+,-./0
+0590  31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40   123456789:;<=>?@
+05a0  41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50   ABCDEFGHIJKLMNOP
+05b0  51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60   QRSTUVWXYZ[\]^_`
+05c0  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+05d0  71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21   qrstuvwxyz{|}~ !
+05e0  22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31   "#$%&'()*+,-./01
+05f0  32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41   23456789:;<=>?@A
+0600  42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51   BCDEFGHIJKLMNOPQ
+0610  20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f    !"#$%&'()*+,-./
+0620  30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f   0123456789:;<=>?
+0630  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0640  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+0650  60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f   `abcdefghijklmno
+0660  70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20   pqrstuvwxyz{|}~ 
+0670  21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30   !"#$%&'()*+,-./0
+0680  31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40   123456789:;<=>?@
+0690  41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50   ABCDEFGHIJKLMNOP
+06a0  51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60   QRSTUVWXYZ[\]^_`
+06b0  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+06c0  71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21   qrstuvwxyz{|}~ !
+06d0  22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31   "#$%&'()*+,-./01
+06e0  32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41   23456789:;<=>?@A
+06f0  42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51   BCDEFGHIJKLMNOPQ
+0700  52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61   RSTUVWXYZ[\]^_`a
+0710  62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71   bcdefghijklmnopq
+0720  72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22   rstuvwxyz{|}~ !"
+0730  23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32   #$%&'()*+,-./012
+0740  33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42   3456789:;<=>?@AB
+0750  43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52   CDEFGHIJKLMNOPQR
+0760  53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62   STUVWXYZ[\]^_`ab
+0770  63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72   cdefghijklmnopqr
+0780  73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23   stuvwxyz{|}~ !"#
+0790  24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33   $%&'()*+,-./0123
+07a0  34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43   456789:;<=>?@ABC
+07b0  44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53   DEFGHIJKLMNOPQRS
+07c0  54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63   TUVWXYZ[\]^_`abc
+07d0  64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73   defghijklmnopqrs
+07e0  74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24   tuvwxyz{|}~ !"#$
+07f0  25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34   %&'()*+,-./01234
+0800  35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44   56789:;<=>?@ABCD
+0810  45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54   EFGHIJKLMNOPQRST
+0820  55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64   UVWXYZ[\]^_`abcd
+0830  65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74   efghijklmnopqrst
+0840  75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25   uvwxyz{|}~ !"#$%
+0850  26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35   &'()*+,-./012345
+0860  36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45   6789:;<=>?@ABCDE
+0870  46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55   FGHIJKLMNOPQRSTU
+0880  56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65   VWXYZ[\]^_`abcde
+0890  66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75   fghijklmnopqrstu
+08a0  76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26   vwxyz{|}~ !"#$%&
+08b0  27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36   '()*+,-./0123456
+08c0  37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46   789:;<=>?@ABCDEF
+08d0  47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56   GHIJKLMNOPQRSTUV
+08e0  57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66   WXYZ[\]^_`abcdef
+08f0  67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76   ghijklmnopqrstuv
+0900  77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27   wxyz{|}~ !"#$%&'
+0910  28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+0920  38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47   89:;<=>?@ABCDEFG
+0930  48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57   HIJKLMNOPQRSTUVW
+0940  58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67   XYZ[\]^_`abcdefg
+0950  68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77   hijklmnopqrstuvw
+0960  78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28   xyz{|}~ !"#$%&'(
+0970  29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38   )*+,-./012345678
+0980  39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48   9:;<=>?@ABCDEFGH
+0990  49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58   IJKLMNOPQRSTUVWX
+09a0  59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68   YZ[\]^_`abcdefgh
+09b0  69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78   ijklmnopqrstuvwx
+09c0  79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29   yz{|}~ !"#$%&'()
+09d0  2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39   *+,-./0123456789
+09e0  3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49   :;<=>?@ABCDEFGHI
+09f0  4a 4b 4c 4d 4e 4f 50 51 20 21 22 23 24 25 26 27   JKLMNOPQ !"#$%&'
+0a00  28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+0a10  38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47   89:;<=>?@ABCDEFG
+0a20  48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57   HIJKLMNOPQRSTUVW
+0a30  58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67   XYZ[\]^_`abcdefg
+0a40  68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77   hijklmnopqrstuvw
+0a50  78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28   xyz{|}~ !"#$%&'(
+0a60  29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38   )*+,-./012345678
+0a70  39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48   9:;<=>?@ABCDEFGH
+0a80  49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58   IJKLMNOPQRSTUVWX
+0a90  59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68   YZ[\]^_`abcdefgh
+0aa0  69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78   ijklmnopqrstuvwx
+0ab0  79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29   yz{|}~ !"#$%&'()
+0ac0  2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39   *+,-./0123456789
+0ad0  3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49   :;<=>?@ABCDEFGHI
+0ae0  4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59   JKLMNOPQRSTUVWXY
+0af0  5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69   Z[\]^_`abcdefghi
+0b00  6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 79   jklmnopqrstuvwxy
+0b10  7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29 2a   z{|}~ !"#$%&'()*
+0b20  2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39 3a   +,-./0123456789:
+0b30  3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49 4a   ;<=>?@ABCDEFGHIJ
+0b40  4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a   KLMNOPQRSTUVWXYZ
+
+Frame 24: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4), Dst: Intel_3d:05:65 (00:02:b3:3d:05:65)
+Internet Protocol Version 4, Src: 192.168.0.3, Dst: 192.168.0.18
+Transmission Control Protocol, Src Port: 1234, Dst Port: 56360, Seq: 1, Ack: 5345, Len: 0
+    Source Port: 1234
+    Destination Port: 56360
+    [Stream index: 3]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    Acknowledgment number: 5345    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x010 (ACK)
+    Window size value: 319
+    [Calculated window size: 40832]
+    [Window size scaling factor: 128]
+    Checksum: 0x7bdc [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+
+Frame 25: 1514 bytes on wire (12112 bits), 1514 bytes captured (12112 bits) on interface 0
+Ethernet II, Src: Intel_3d:05:65 (00:02:b3:3d:05:65), Dst: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4)
+Internet Protocol Version 4, Src: 192.168.0.18, Dst: 192.168.0.3
+Transmission Control Protocol, Src Port: 56360, Dst Port: 1234, Seq: 5345, Ack: 1, Len: 1448
+    Source Port: 56360
+    Destination Port: 1234
+    [Stream index: 3]
+    [TCP Segment Len: 1448]
+    Sequence number: 5345    (relative sequence number)
+    [Next sequence number: 6793    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x010 (ACK)
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x616d [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+    TCP payload (1448 bytes)
+Data (1448 bytes)
+
+0000  5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a   [\]^_`abcdefghij
+0010  6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 79 7a   klmnopqrstuvwxyz
+0020  7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29 2a 2b   {|}~ !"#$%&'()*+
+0030  2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39 3a 3b   ,-./0123456789:;
+0040  3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49 4a 4b   <=>?@ABCDEFGHIJK
+0050  4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b   LMNOPQRSTUVWXYZ[
+0060  5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 6b   \]^_`abcdefghijk
+0070  6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 79 7a 7b   lmnopqrstuvwxyz{
+0080  7c 7d 7e 20 21 22 23 24 25 26 27 28 29 2a 2b 2c   |}~ !"#$%&'()*+,
+0090  2d 2e 2f 30 31 32 33 34 35 36 37 38 39 3a 3b 3c   -./0123456789:;<
+00a0  3d 3e 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c   =>?@ABCDEFGHIJKL
+00b0  4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c   MNOPQRSTUVWXYZ[\
+00c0  5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 6b 6c   ]^_`abcdefghijkl
+00d0  6d 6e 6f 70 71 72 73 74 75 76 77 78 79 7a 7b 7c   mnopqrstuvwxyz{|
+00e0  7d 7e 20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d   }~ !"#$%&'()*+,-
+00f0  2e 2f 30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d   ./0123456789:;<=
+0100  3e 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d   >?@ABCDEFGHIJKLM
+0110  4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d   NOPQRSTUVWXYZ[\]
+0120  5e 5f 60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d   ^_`abcdefghijklm
+0130  6e 6f 70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d   nopqrstuvwxyz{|}
+0140  7e 20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e   ~ !"#$%&'()*+,-.
+0150  2f 30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e   /0123456789:;<=>
+0160  3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e   ?@ABCDEFGHIJKLMN
+0170  4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e   OPQRSTUVWXYZ[\]^
+0180  5f 60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e   _`abcdefghijklmn
+0190  6f 70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e   opqrstuvwxyz{|}~
+01a0  20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f    !"#$%&'()*+,-./
+01b0  30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f   0123456789:;<=>?
+01c0  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+01d0  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+01e0  60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f   `abcdefghijklmno
+01f0  70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20   pqrstuvwxyz{|}~ 
+0200  21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30   !"#$%&'()*+,-./0
+0210  31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40   123456789:;<=>?@
+0220  41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50   ABCDEFGHIJKLMNOP
+0230  51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60   QRSTUVWXYZ[\]^_`
+0240  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+0250  71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21   qrstuvwxyz{|}~ !
+0260  22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31   "#$%&'()*+,-./01
+0270  32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41   23456789:;<=>?@A
+0280  42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51   BCDEFGHIJKLMNOPQ
+0290  20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f    !"#$%&'()*+,-./
+02a0  30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f   0123456789:;<=>?
+02b0  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+02c0  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+02d0  60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f   `abcdefghijklmno
+02e0  70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20   pqrstuvwxyz{|}~ 
+02f0  21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30   !"#$%&'()*+,-./0
+0300  31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40   123456789:;<=>?@
+0310  41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50   ABCDEFGHIJKLMNOP
+0320  51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60   QRSTUVWXYZ[\]^_`
+0330  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+0340  71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21   qrstuvwxyz{|}~ !
+0350  22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31   "#$%&'()*+,-./01
+0360  32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41   23456789:;<=>?@A
+0370  42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51   BCDEFGHIJKLMNOPQ
+0380  52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61   RSTUVWXYZ[\]^_`a
+0390  62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71   bcdefghijklmnopq
+03a0  72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22   rstuvwxyz{|}~ !"
+03b0  23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32   #$%&'()*+,-./012
+03c0  33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42   3456789:;<=>?@AB
+03d0  43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52   CDEFGHIJKLMNOPQR
+03e0  53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62   STUVWXYZ[\]^_`ab
+03f0  63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72   cdefghijklmnopqr
+0400  73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23   stuvwxyz{|}~ !"#
+0410  24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33   $%&'()*+,-./0123
+0420  34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43   456789:;<=>?@ABC
+0430  44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53   DEFGHIJKLMNOPQRS
+0440  54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63   TUVWXYZ[\]^_`abc
+0450  64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73   defghijklmnopqrs
+0460  74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24   tuvwxyz{|}~ !"#$
+0470  25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34   %&'()*+,-./01234
+0480  35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44   56789:;<=>?@ABCD
+0490  45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54   EFGHIJKLMNOPQRST
+04a0  55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64   UVWXYZ[\]^_`abcd
+04b0  65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74   efghijklmnopqrst
+04c0  75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25   uvwxyz{|}~ !"#$%
+04d0  26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35   &'()*+,-./012345
+04e0  36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45   6789:;<=>?@ABCDE
+04f0  46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55   FGHIJKLMNOPQRSTU
+0500  56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65   VWXYZ[\]^_`abcde
+0510  66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75   fghijklmnopqrstu
+0520  76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26   vwxyz{|}~ !"#$%&
+0530  27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36   '()*+,-./0123456
+0540  37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46   789:;<=>?@ABCDEF
+0550  47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56   GHIJKLMNOPQRSTUV
+0560  57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66   WXYZ[\]^_`abcdef
+0570  67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76   ghijklmnopqrstuv
+0580  77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27   wxyz{|}~ !"#$%&'
+0590  28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+05a0  38 39 3a 3b 3c 3d 3e 3f                           89:;<=>?
+
+Frame 26: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4), Dst: Intel_3d:05:65 (00:02:b3:3d:05:65)
+Internet Protocol Version 4, Src: 192.168.0.3, Dst: 192.168.0.18
+Transmission Control Protocol, Src Port: 1234, Dst Port: 56360, Seq: 1, Ack: 6793, Len: 0
+    Source Port: 1234
+    Destination Port: 56360
+    [Stream index: 3]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    Acknowledgment number: 6793    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x010 (ACK)
+    Window size value: 342
+    [Calculated window size: 43776]
+    [Window size scaling factor: 128]
+    Checksum: 0x761d [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+
+Frame 27: 3274 bytes on wire (26192 bits), 3274 bytes captured (26192 bits) on interface 0
+Ethernet II, Src: Intel_3d:05:65 (00:02:b3:3d:05:65), Dst: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4)
+Internet Protocol Version 4, Src: 192.168.0.18, Dst: 192.168.0.3
+Transmission Control Protocol, Src Port: 56360, Dst Port: 1234, Seq: 6793, Ack: 1, Len: 3208
+    Source Port: 56360
+    Destination Port: 1234
+    [Stream index: 3]
+    [TCP Segment Len: 3208]
+    Sequence number: 6793    (relative sequence number)
+    [Next sequence number: 10002    (relative sequence number)]
+    Acknowledgment number: 1    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x019 (FIN, PSH, ACK)
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x8e14 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+    TCP payload (3208 bytes)
+Data (3208 bytes)
+
+0000  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0010  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+0020  60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f   `abcdefghijklmno
+0030  70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20   pqrstuvwxyz{|}~ 
+0040  21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30   !"#$%&'()*+,-./0
+0050  31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40   123456789:;<=>?@
+0060  41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50   ABCDEFGHIJKLMNOP
+0070  51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60   QRSTUVWXYZ[\]^_`
+0080  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+0090  71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21   qrstuvwxyz{|}~ !
+00a0  22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31   "#$%&'()*+,-./01
+00b0  32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41   23456789:;<=>?@A
+00c0  42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51   BCDEFGHIJKLMNOPQ
+00d0  20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f    !"#$%&'()*+,-./
+00e0  30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f   0123456789:;<=>?
+00f0  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+0100  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+0110  60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f   `abcdefghijklmno
+0120  70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20   pqrstuvwxyz{|}~ 
+0130  21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30   !"#$%&'()*+,-./0
+0140  31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40   123456789:;<=>?@
+0150  41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50   ABCDEFGHIJKLMNOP
+0160  51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60   QRSTUVWXYZ[\]^_`
+0170  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+0180  71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21   qrstuvwxyz{|}~ !
+0190  22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31   "#$%&'()*+,-./01
+01a0  32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41   23456789:;<=>?@A
+01b0  42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51   BCDEFGHIJKLMNOPQ
+01c0  52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61   RSTUVWXYZ[\]^_`a
+01d0  62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71   bcdefghijklmnopq
+01e0  72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22   rstuvwxyz{|}~ !"
+01f0  23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32   #$%&'()*+,-./012
+0200  33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42   3456789:;<=>?@AB
+0210  43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52   CDEFGHIJKLMNOPQR
+0220  53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62   STUVWXYZ[\]^_`ab
+0230  63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72   cdefghijklmnopqr
+0240  73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23   stuvwxyz{|}~ !"#
+0250  24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33   $%&'()*+,-./0123
+0260  34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43   456789:;<=>?@ABC
+0270  44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53   DEFGHIJKLMNOPQRS
+0280  54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63   TUVWXYZ[\]^_`abc
+0290  64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73   defghijklmnopqrs
+02a0  74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24   tuvwxyz{|}~ !"#$
+02b0  25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34   %&'()*+,-./01234
+02c0  35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44   56789:;<=>?@ABCD
+02d0  45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54   EFGHIJKLMNOPQRST
+02e0  55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64   UVWXYZ[\]^_`abcd
+02f0  65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74   efghijklmnopqrst
+0300  75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25   uvwxyz{|}~ !"#$%
+0310  26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35   &'()*+,-./012345
+0320  36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45   6789:;<=>?@ABCDE
+0330  46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55   FGHIJKLMNOPQRSTU
+0340  56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65   VWXYZ[\]^_`abcde
+0350  66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75   fghijklmnopqrstu
+0360  76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26   vwxyz{|}~ !"#$%&
+0370  27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36   '()*+,-./0123456
+0380  37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46   789:;<=>?@ABCDEF
+0390  47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56   GHIJKLMNOPQRSTUV
+03a0  57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66   WXYZ[\]^_`abcdef
+03b0  67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76   ghijklmnopqrstuv
+03c0  77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27   wxyz{|}~ !"#$%&'
+03d0  28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+03e0  38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47   89:;<=>?@ABCDEFG
+03f0  48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57   HIJKLMNOPQRSTUVW
+0400  58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67   XYZ[\]^_`abcdefg
+0410  68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77   hijklmnopqrstuvw
+0420  78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28   xyz{|}~ !"#$%&'(
+0430  29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38   )*+,-./012345678
+0440  39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48   9:;<=>?@ABCDEFGH
+0450  49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58   IJKLMNOPQRSTUVWX
+0460  59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68   YZ[\]^_`abcdefgh
+0470  69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78   ijklmnopqrstuvwx
+0480  79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29   yz{|}~ !"#$%&'()
+0490  2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39   *+,-./0123456789
+04a0  3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49   :;<=>?@ABCDEFGHI
+04b0  4a 4b 4c 4d 4e 4f 50 51 20 21 22 23 24 25 26 27   JKLMNOPQ !"#$%&'
+04c0  28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+04d0  38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47   89:;<=>?@ABCDEFG
+04e0  48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57   HIJKLMNOPQRSTUVW
+04f0  58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67   XYZ[\]^_`abcdefg
+0500  68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77   hijklmnopqrstuvw
+0510  78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28   xyz{|}~ !"#$%&'(
+0520  29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38   )*+,-./012345678
+0530  39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48   9:;<=>?@ABCDEFGH
+0540  49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58   IJKLMNOPQRSTUVWX
+0550  59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68   YZ[\]^_`abcdefgh
+0560  69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78   ijklmnopqrstuvwx
+0570  79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29   yz{|}~ !"#$%&'()
+0580  2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39   *+,-./0123456789
+0590  3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49   :;<=>?@ABCDEFGHI
+05a0  4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59   JKLMNOPQRSTUVWXY
+05b0  5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69   Z[\]^_`abcdefghi
+05c0  6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 79   jklmnopqrstuvwxy
+05d0  7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29 2a   z{|}~ !"#$%&'()*
+05e0  2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39 3a   +,-./0123456789:
+05f0  3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49 4a   ;<=>?@ABCDEFGHIJ
+0600  4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a   KLMNOPQRSTUVWXYZ
+0610  5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a   [\]^_`abcdefghij
+0620  6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 79 7a   klmnopqrstuvwxyz
+0630  7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29 2a 2b   {|}~ !"#$%&'()*+
+0640  2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39 3a 3b   ,-./0123456789:;
+0650  3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49 4a 4b   <=>?@ABCDEFGHIJK
+0660  4c 4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b   LMNOPQRSTUVWXYZ[
+0670  5c 5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 6b   \]^_`abcdefghijk
+0680  6c 6d 6e 6f 70 71 72 73 74 75 76 77 78 79 7a 7b   lmnopqrstuvwxyz{
+0690  7c 7d 7e 20 21 22 23 24 25 26 27 28 29 2a 2b 2c   |}~ !"#$%&'()*+,
+06a0  2d 2e 2f 30 31 32 33 34 35 36 37 38 39 3a 3b 3c   -./0123456789:;<
+06b0  3d 3e 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c   =>?@ABCDEFGHIJKL
+06c0  4d 4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c   MNOPQRSTUVWXYZ[\
+06d0  5d 5e 5f 60 61 62 63 64 65 66 67 68 69 6a 6b 6c   ]^_`abcdefghijkl
+06e0  6d 6e 6f 70 71 72 73 74 75 76 77 78 79 7a 7b 7c   mnopqrstuvwxyz{|
+06f0  7d 7e 20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d   }~ !"#$%&'()*+,-
+0700  2e 2f 30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d   ./0123456789:;<=
+0710  3e 3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d   >?@ABCDEFGHIJKLM
+0720  4e 4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d   NOPQRSTUVWXYZ[\]
+0730  5e 5f 60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d   ^_`abcdefghijklm
+0740  6e 6f 70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d   nopqrstuvwxyz{|}
+0750  7e 20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e   ~ !"#$%&'()*+,-.
+0760  2f 30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e   /0123456789:;<=>
+0770  3f 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e   ?@ABCDEFGHIJKLMN
+0780  4f 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e   OPQRSTUVWXYZ[\]^
+0790  5f 60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e   _`abcdefghijklmn
+07a0  6f 70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e   opqrstuvwxyz{|}~
+07b0  20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f    !"#$%&'()*+,-./
+07c0  30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f   0123456789:;<=>?
+07d0  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+07e0  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+07f0  60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f   `abcdefghijklmno
+0800  70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20   pqrstuvwxyz{|}~ 
+0810  21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30   !"#$%&'()*+,-./0
+0820  31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40   123456789:;<=>?@
+0830  41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50   ABCDEFGHIJKLMNOP
+0840  51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60   QRSTUVWXYZ[\]^_`
+0850  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+0860  71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21   qrstuvwxyz{|}~ !
+0870  22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31   "#$%&'()*+,-./01
+0880  32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41   23456789:;<=>?@A
+0890  42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51   BCDEFGHIJKLMNOPQ
+08a0  20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f    !"#$%&'()*+,-./
+08b0  30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f   0123456789:;<=>?
+08c0  40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f   @ABCDEFGHIJKLMNO
+08d0  50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f   PQRSTUVWXYZ[\]^_
+08e0  60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f   `abcdefghijklmno
+08f0  70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20   pqrstuvwxyz{|}~ 
+0900  21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30   !"#$%&'()*+,-./0
+0910  31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40   123456789:;<=>?@
+0920  41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50   ABCDEFGHIJKLMNOP
+0930  51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60   QRSTUVWXYZ[\]^_`
+0940  61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70   abcdefghijklmnop
+0950  71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21   qrstuvwxyz{|}~ !
+0960  22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31   "#$%&'()*+,-./01
+0970  32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41   23456789:;<=>?@A
+0980  42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51   BCDEFGHIJKLMNOPQ
+0990  52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61   RSTUVWXYZ[\]^_`a
+09a0  62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71   bcdefghijklmnopq
+09b0  72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22   rstuvwxyz{|}~ !"
+09c0  23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32   #$%&'()*+,-./012
+09d0  33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42   3456789:;<=>?@AB
+09e0  43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52   CDEFGHIJKLMNOPQR
+09f0  53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62   STUVWXYZ[\]^_`ab
+0a00  63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72   cdefghijklmnopqr
+0a10  73 74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23   stuvwxyz{|}~ !"#
+0a20  24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33   $%&'()*+,-./0123
+0a30  34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43   456789:;<=>?@ABC
+0a40  44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53   DEFGHIJKLMNOPQRS
+0a50  54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63   TUVWXYZ[\]^_`abc
+0a60  64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73   defghijklmnopqrs
+0a70  74 75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24   tuvwxyz{|}~ !"#$
+0a80  25 26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34   %&'()*+,-./01234
+0a90  35 36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44   56789:;<=>?@ABCD
+0aa0  45 46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54   EFGHIJKLMNOPQRST
+0ab0  55 56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64   UVWXYZ[\]^_`abcd
+0ac0  65 66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74   efghijklmnopqrst
+0ad0  75 76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25   uvwxyz{|}~ !"#$%
+0ae0  26 27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35   &'()*+,-./012345
+0af0  36 37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45   6789:;<=>?@ABCDE
+0b00  46 47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55   FGHIJKLMNOPQRSTU
+0b10  56 57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65   VWXYZ[\]^_`abcde
+0b20  66 67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75   fghijklmnopqrstu
+0b30  76 77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26   vwxyz{|}~ !"#$%&
+0b40  27 28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36   '()*+,-./0123456
+0b50  37 38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46   789:;<=>?@ABCDEF
+0b60  47 48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56   GHIJKLMNOPQRSTUV
+0b70  57 58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66   WXYZ[\]^_`abcdef
+0b80  67 68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76   ghijklmnopqrstuv
+0b90  77 78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27   wxyz{|}~ !"#$%&'
+0ba0  28 29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37   ()*+,-./01234567
+0bb0  38 39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47   89:;<=>?@ABCDEFG
+0bc0  48 49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57   HIJKLMNOPQRSTUVW
+0bd0  58 59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67   XYZ[\]^_`abcdefg
+0be0  68 69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77   hijklmnopqrstuvw
+0bf0  78 79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28   xyz{|}~ !"#$%&'(
+0c00  29 2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38   )*+,-./012345678
+0c10  39 3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48   9:;<=>?@ABCDEFGH
+0c20  49 4a 4b 4c 4d 4e 4f 50 51 52 53 54 55 56 57 58   IJKLMNOPQRSTUVWX
+0c30  59 5a 5b 5c 5d 5e 5f 60 61 62 63 64 65 66 67 68   YZ[\]^_`abcdefgh
+0c40  69 6a 6b 6c 6d 6e 6f 70 71 72 73 74 75 76 77 78   ijklmnopqrstuvwx
+0c50  79 7a 7b 7c 7d 7e 20 21 22 23 24 25 26 27 28 29   yz{|}~ !"#$%&'()
+0c60  2a 2b 2c 2d 2e 2f 30 31 32 33 34 35 36 37 38 39   *+,-./0123456789
+0c70  3a 3b 3c 3d 3e 3f 40 41 42 43 44 45 46 47 48 49   :;<=>?@ABCDEFGHI
+0c80  4a 4b 4c 4d 4e 4f 50 51                           JKLMNOPQ
+
+Frame 28: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4), Dst: Intel_3d:05:65 (00:02:b3:3d:05:65)
+Internet Protocol Version 4, Src: 192.168.0.3, Dst: 192.168.0.18
+Transmission Control Protocol, Src Port: 1234, Dst Port: 56360, Seq: 1, Ack: 10002, Len: 0
+    Source Port: 1234
+    Destination Port: 56360
+    [Stream index: 3]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    Acknowledgment number: 10002    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x010 (ACK)
+    Window size value: 392
+    [Calculated window size: 50176]
+    [Window size scaling factor: 128]
+    Checksum: 0x6961 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]
+
+Frame 29: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4), Dst: Intel_3d:05:65 (00:02:b3:3d:05:65)
+Internet Protocol Version 4, Src: 192.168.0.3, Dst: 192.168.0.18
+Transmission Control Protocol, Src Port: 1234, Dst Port: 56360, Seq: 1, Ack: 10002, Len: 0
+    Source Port: 1234
+    Destination Port: 56360
+    [Stream index: 3]
+    [TCP Segment Len: 0]
+    Sequence number: 1    (relative sequence number)
+    Acknowledgment number: 10002    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x011 (FIN, ACK)
+    Window size value: 392
+    [Calculated window size: 50176]
+    [Window size scaling factor: 128]
+    Checksum: 0x6960 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+
+Frame 30: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface 0
+Ethernet II, Src: Intel_3d:05:65 (00:02:b3:3d:05:65), Dst: CompalIn_1a:68:b4 (f0:76:1c:1a:68:b4)
+Internet Protocol Version 4, Src: 192.168.0.18, Dst: 192.168.0.3
+Transmission Control Protocol, Src Port: 56360, Dst Port: 1234, Seq: 10002, Ack: 2, Len: 0
+    Source Port: 56360
+    Destination Port: 1234
+    [Stream index: 3]
+    [TCP Segment Len: 0]
+    Sequence number: 10002    (relative sequence number)
+    Acknowledgment number: 2    (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x010 (ACK)
+    Window size value: 229
+    [Calculated window size: 29312]
+    [Window size scaling factor: 128]
+    Checksum: 0x6a02 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+    [SEQ/ACK analysis]

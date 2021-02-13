@@ -1,0 +1,144 @@
+\documentclass[a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+
+\usepackage{enumitem}
+
+\begin{document}
+\title{IK2218 Lab 1 report}
+\author{Felix Hedenström\\Robin Gunning\\Mikael Forsberg}
+\maketitle
+
+%Docs https://docs.google.com/document/d/1Iw0tQCSemI-UfsrA01M0wIfYWkFcVsbhMt28TlYYKZg/edit#
+\tableofcontents
+\newpage
+Acknowledgement: Host B did not use the reno TCP congestion avoidance algorithm until question 13. With our knowledge of the assignment this should not matter, but it best to disclose everything.
+\setcounter{section}{9}
+\section{Basic operation of TCP}
+\setcounter{subsection}{6}
+\subsection{}
+\begin{enumerate}[label=\alph*)]
+\item Through wireshark we counted 15 packets in total
+\item We found these sequence numbers in the packages sent. They are easiest presented as relative sequence numbers:
+0, 1, 1001, 2449, 5345, 6793, 10002
+\newline
+\newline
+The range of the numbers should then be described as [0-10002]
+
+\item 10 packets did not carry any payload
+\item The packages carried: 11 006 bytes total of which 10 000 bytes where user data
+
+\item UDP is more efficient in terms of overhead
+\newline
+\newline
+In this case:
+\newline
+	UDP has an efficiency of 95.97\%
+    \newline
+	TCP has an efficiency of 90.86\% = 10 000 / 11 006
+
+\end{enumerate}
+\section{TCP connection management}
+\setcounter{subsection}{1}
+\setcounter{subsubsection}{5}
+\subsubsection{}
+\begin{enumerate}[label=\alph*)]
+\item The first three packets are the three-way handshake. The packets were:\newline
+\newline
+First package was from A to B, containing the flag SYN.\newline
+The second package was from B to A, containing the flags SYN and ACK.\newline
+The third package went from A to B and contained only the flag ACK.\newline
+\newline 
+This means that host A wants to communicate with server B through a certain socket,
+B answers by acknowledging this and opening the socket, A answers that it has acknowledged
+that the socket is open. SYN means they should synchronize the sequence numbers, so that
+the relative sequence numbers are the same. 
+
+
+\item Both the host and the client had the same initial relative sequence number, 0. This is in line with the results we observed in b). 
+\newline
+\newline
+Host A, the client, had an absolute initial sequence number of 2 368 580 297\newline
+Host  B, the server, had an absolute initial sequence number of 2 235 071 071
+
+\item The fourth package was the first application data package. \newline
+It was a telnet data package and carried 27 bytes of data.
+\item The client/host A had an initial window size of 29200\newline
+The server/host B had an initial windows size of 28960
+
+\item Roughly 1.8 milliseconds was observed through Wireshark
+\end{enumerate}
+\subsubsection{}
+\begin{enumerate}[label=\alph*)]
+\item The last three packets are involved in the connection termination. This is basically a handshake terminating the connection.\newline
+\item The first package was from A to B and contained the flags FIN and ACK.\newline
+    The second package was from B to A and contained the flags FIN and ACK.\newline
+    The last package was from A to B and contained a final ACK.\newline
+\newline
+So the client wants to end the connections and sends the FIN bit, indication that the host has finished the transmission and wants to end the connection. The host also sends a FIN bit and an ACK to show that it has seen the hosts FIN packet. The host then sends a final ACK to respond that it has seen that the server also is ready to finish/terminate the connection.
+\end{enumerate}
+\setcounter{subsection}{2}
+\setcounter{subsubsection}{4}
+\subsubsection{}
+\begin{enumerate}[label=\alph*)]
+\item The server replies to the client’s initial SYN with an RST/ACK . The RST flag means that the host should stop using the TCP connection as soon as possible. 
+\item The connection is terminated in less than one millisecond.
+\end{enumerate}
+\section{TCP data transfer}
+\setcounter{subsection}{1}
+\setcounter{subsubsection}{3}
+\subsubsection{}
+\begin{enumerate}[label=\alph*)]
+\item Three segments per typed character can be seen. 
+\item The payloads consists of the single typed character. This is true for both the client and the server. The first segment contains the character payload and is sent from the client to the server. The second segment contains the same character payload and is sent from the server to the client. The third segment does not contain any payload.
+\item This is because the server uses piggybacking and sends an ACK with the character data it sends back.
+\newline
+\newline
+The process of sending a single character is:
+
+Host A sends a character
+Host B sends back the same character and acknowledges that A has sent a character
+Host A acknowledges that B sent back a character.
+
+\item The delay is because of the delayed ack algorithm. By observing Wireshark the delay can be estimated to be approximately 150 milliseconds.
+\item The window size of the client is 245.\newline
+The window size of the server is 227.\newline
+\newline
+The windows sizes of the client and server did not vary during the connection.
+
+\end{enumerate}
+\subsubsection{}
+\begin{enumerate}[label=\alph*)]
+\item When typing quickly enough, multiple characters are sent in single packets. The client seemingly only needs to send one ACK back after receiving many rapid mirrored characters back from the server. This is because the delayed ack algorithm.
+\end{enumerate}
+\setcounter{subsection}{2}
+\setcounter{subsubsection}{4}
+\subsubsection{}
+\begin{enumerate}[label=\alph*)]
+\item The rule (according to one of our TA:s) is that the receiver waits for some time to
+accumulate received data and then ACKs it. This is according to the delayed ack algorithm. It waits up to 500 ms by default. In our data it is really difficult to make out any type of pattern that would support this, and we do not see this rule.
+
+\item It scales with the window size. However when reading the data the receiver usually acknowledge 1448 bytes of data. There are very few examples where the ack is larger.
+\item The window size increases 
+\item 0.030413273 to 0.033449434. So roughly about 0.003 seconds.
+\item No. There tends to be quite alot of headroom.
+\end{enumerate}
+\section{TCP retransmissions}
+\setcounter{subsection}{5}
+\subsection{}
+\begin{enumerate}[label=\alph*)]
+\item There is only one packet sent at retransmission timeout.
+
+\item The retransmissions end when the connection is closed due to session timeout.
+\end{enumerate}
+\section{TCP congestion control}
+\setcounter{subsection}{5}
+\subsection{}
+\begin{enumerate}[label=\alph*)]
+\item Yes, it does. The window starts out small and increases in size as time and packets passes. 
+\item Fast recovery (in the congestion avoidance phase) would result in a lowering of the CWND, which with the artificial delay enabled should be visible in the tcptrace graph in the form of a reduction in the number of segments sent per burst. However, it seems that in our test we only had packet losses during the slow start phase.
+\end{enumerate}
+\end{document}
